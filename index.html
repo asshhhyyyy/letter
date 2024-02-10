@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional CSS to ensure animation works */
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+        .fa-heart.fa-beat {
+            animation: heartbeat 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="message-container" style="display: none;height: 0;">
+            <p id="message"></p>
+        </div>
+
+        <div class="heart-container" style="margin-top: 0;">
+            <i id="solid-heart" class="fa-solid fa-heart fa-2x fa-beat" style="color: #ff0000;"></i>
+        </div>
+    </div>
+
+    <p style="position: fixed; bottom: 5px; right: 20px;">Made by Nash ❤️</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
